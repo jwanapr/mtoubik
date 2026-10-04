@@ -1,0 +1,426 @@
+/* =================================
+   PROJECT PAGE
+================================= */
+
+.project-container{
+  width:min(1180px, calc(100% - 40px));
+  margin:auto;
+}
+
+
+/* =================================
+   NAV
+================================= */
+
+.project-nav{
+  padding:25px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.project-nav .project-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.back-link{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:13px;
+  transition:.25s;
+}
+
+.back-link:hover{
+  color:var(--brand-light);
+}
+
+.back-link span{
+  font-size:18px;
+}
+
+.project-brand{
+  font-size:14px;
+  font-weight:700;
+}
+
+
+/* =================================
+   TOP
+================================= */
+
+.project-top{
+  padding:90px 0 45px;
+}
+
+.breadcrumb-project{
+  display:flex;
+  gap:10px;
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:35px;
+}
+
+.breadcrumb-project span{
+  opacity:.5;
+}
+
+.project-label{
+  display:inline-flex;
+  padding:7px 13px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--muted);
+  font-size:11px;
+  margin-bottom:18px;
+}
+
+.project-top h1{
+  margin:0;
+  font-size:clamp(42px, 7vw, 86px);
+  line-height:1.3;
+  letter-spacing:0;
+  font-weight:700;
+}
+
+.project-intro{
+  max-width:650px;
+  margin-top:25px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.9;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.project-hero{
+  padding-bottom:100px;
+}
+
+.hero-image-wrap{
+  width:100%;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+
+.hero-image-wrap img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.project-content{
+  padding:80px 0 100px;
+  border-top:1px solid var(--line);
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 260px;
+  gap:100px;
+  direction:ltr;
+}
+
+.project-main{
+  direction:rtl;
+}
+
+.project-sidebar{
+  direction:rtl;
+}
+
+
+/* blocks */
+
+.project-block{
+  position:relative;
+  padding-bottom:70px;
+  margin-bottom:70px;
+  border-bottom:1px solid var(--line);
+}
+
+.project-block:last-child{
+  border-bottom:0;
+}
+
+.block-number{
+  display:block;
+  margin-bottom:20px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.project-block h2{
+  margin:0 0 20px;
+  font-size:34px;
+  letter-spacing:0;
+}
+
+.project-block p{
+  max-width:700px;
+  margin:0;
+  color:var(--muted);
+  line-height:2;
+  font-size:14px;
+}
+
+
+/* =================================
+   SIDEBAR
+================================= */
+
+.project-sidebar{
+  align-self:start;
+  position:sticky;
+  top:30px;
+}
+
+.info-box{
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.info-box span{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  margin-bottom:8px;
+}
+
+.info-box strong{
+  font-size:14px;
+  font-weight:500;
+}
+
+
+/* =================================
+   CTA
+================================= */
+
+.project-cta{
+  padding:30px 0 100px;
+}
+
+.cta-inner{
+  min-height:230px;
+  padding:45px;
+  border:1px solid var(--line);
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255,255,255,.07),
+      transparent 35%
+    ),
+    var(--surface);
+}
+
+.cta-small{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:12px;
+}
+
+.cta-inner h2{
+  margin:0;
+  font-size:34px;
+  letter-spacing:0;
+}
+
+.cta-button{
+  display:inline-flex;
+  align-items:center;
+  gap:15px;
+
+  padding:13px 20px;
+
+  background:#fff;
+  color:#111;
+
+  border-radius:999px;
+
+  text-decoration:none;
+  font-size:13px;
+  white-space:nowrap;
+
+  transition:.25s;
+}
+
+.cta-button:hover{
+  transform:translateY(-2px);
+}
+
+
+/* =================================
+   MORE PROJECTS
+================================= */
+
+.more-projects{
+  padding:80px 0 100px;
+  border-top:1px solid var(--line);
+}
+
+.more-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  margin-bottom:35px;
+}
+
+.more-head span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.more-head h2{
+  margin:7px 0 0;
+  font-size:34px;
+}
+
+.more-head a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:12px;
+}
+
+.more-card{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+.more-card-image{
+  aspect-ratio:4/3;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+
+.more-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.5s;
+}
+
+.more-card:hover img{
+  transform:scale(1.04);
+}
+
+.more-card-title{
+  margin-top:12px;
+  font-size:14px;
+}
+
+.more-card-type{
+  margin-top:5px;
+  color:var(--muted);
+  font-size:11px;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.project-footer{
+  padding:30px 0;
+  border-top:1px solid var(--line);
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+  font-size:11px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media(max-width:767px){
+
+  .project-container{
+    width:min(100% - 30px, 1180px);
+  }
+
+  .project-top{
+    padding:55px 0 30px;
+  }
+
+  .project-top h1{
+    font-size:48px;
+  letter-spacing:0;
+  }
+
+  .project-intro{
+    font-size:14px;
+  }
+
+  .project-hero{
+    padding-bottom:60px;
+  }
+
+  .hero-image-wrap{
+    border-radius:14px;
+  }
+
+  .project-content{
+    padding:60px 0;
+  }
+
+  .project-grid{
+    display:block;
+  }
+
+  .project-sidebar{
+    position:static;
+    margin-top:30px;
+  }
+
+  .project-block{
+    padding-bottom:45px;
+    margin-bottom:45px;
+  }
+
+  .project-block h2{
+    font-size:28px;
+  }
+
+  .cta-inner{
+    padding:30px;
+    display:block;
+  }
+
+  .cta-inner h2{
+    font-size:28px;
+    margin-bottom:25px;
+  }
+
+  .more-head h2{
+    font-size:28px;
+  }
+
+}
